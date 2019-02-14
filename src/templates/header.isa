@@ -1,0 +1,178 @@
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>{{ title }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Make your life and yours collaborators simpler with Mayax" />
+		<meta name="keywords" content="Mayax, doit cloud, Salesforce, WhatsApp, appexchange" />
+		<meta name="author" content="DoIT Cloud Consulting" />
+
+	  	<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content="images/cube.jpg"/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+
+		<!-- Favicon  -->
+	    <link rel="shortcut icon" href="images/logo.png">
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
+		
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="{{ dominio }}css/animate.css">
+		<!-- Icomoon Icon Fonts-->
+		<link rel="stylesheet" href="{{ dominio }}css/icomoon.css">
+		<!-- Themify Icons-->
+		<link rel="stylesheet" href="{{ dominio }}css/themify-icons.css">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="{{ dominio }}css/bootstrap.css">
+
+		<!-- Magnific Popup -->
+		<link rel="stylesheet" href="{{ dominio }}css/magnific-popup.css">
+
+		<!-- Owl Carousel  -->
+		<link rel="stylesheet" href="{{ dominio }}css/owl.carousel.min.css">
+		<link rel="stylesheet" href="{{ dominio }}css/owl.theme.default.min.css">
+
+		<!-- Theme style  -->
+		<link rel="stylesheet" href="{{ dominio }}css/style.css">
+
+		<!-- Modernizr JS -->
+		<script src="{{ dominio }}js/modernizr-2.6.2.min.js"></script>
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+		<script src="{{ dominio }}js/respond.min.js"></script>
+		<![endif]-->
+
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			.columns {
+			  float: left;
+			  width: 33.3%;
+			  padding: 8px;
+			}
+			 
+			.price {
+			  list-style-type: none;
+			  border: 1px solid #eee;
+			  margin: 0;
+			  padding: 0;
+			  -webkit-transition: 0.3s;
+			  transition: 0.3s;
+			}
+
+			.price:hover {
+			  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+			}
+
+			.price .header-pricing {
+			  background-color: #111;
+			  color: white;
+			  font-size: 25px;
+			}
+
+			.price li {
+			  border-bottom: 1px solid #eee;
+			  padding: 10px;
+			  text-align: center;
+			}
+
+			.price .grey {
+			  background-color: #eee;
+			  font-size: 20px;
+			}
+			#pricing_plan li {
+				cursor:pointer; 
+			}
+
+			.button {
+			  background-color: #4CAF50;
+			  border: none;
+			  color: white;
+			  padding: 10px 25px;
+			  text-align: center;
+			  text-decoration: none;
+			  font-size: 18px;
+			}
+
+			@media only screen and (max-width: 600px) {
+			  .columns {
+			    width: 100%;
+			  }
+			}
+
+			.btn_mayax{
+				background-color: #000 !important;
+				color: #fff;
+			}
+
+			.btn_mayax .active{
+				background-color: #17B794;
+				color: #fff;
+			}
+
+			.header-pricing .active{
+				backgroung-color: #17B794 !important;
+			}
+
+			.price-s {
+			  list-style-type: none;
+			  border: 1px solid #eee;
+			  margin: 0;
+			  padding: 0;
+			  -webkit-transition: 0.3s;
+			  transition: 0.3s;
+			}
+
+			.price-s:hover {
+			  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+			}
+
+			.price-s .header-pricing {
+			  background-color: #111;
+			  color: white;
+			  font-size: 25px;
+			}
+
+			.price-s li {
+			  border-bottom: 1px solid #eee;
+			  padding: 10px;
+			  text-align: center;
+			}
+
+			.price-s .grey {
+			  background-color: #eee;
+			  font-size: 20px;
+			}
+			#pricing_storage li {
+				cursor:pointer; 
+			}
+			.gtco-services .service {
+			    text-align: left;
+			    padding: 2em;
+			    margin-bottom: 30px;
+			    position: fixed;
+			    max-width: 33.3%;
+			    float: left;
+			    background: #fff;
+			}
+			.summarize{
+				float: right;
+				padding-right: 2em;
+				margin-right: 150px;
+			}
+
+			.close{
+				font-size: 54px;	
+			}
+		</style>
+
+	</head>

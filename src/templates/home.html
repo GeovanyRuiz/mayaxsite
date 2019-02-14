@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+	{{
+		include(
+			"header.isa",
+			{
+				title: "Mayax",
+				dominio : dom 
+			}
+		)
+	}}
+
+	<body>
+		
+
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+
+		{{
+			include(
+				"menu.isa",{
+					dominio : dom,
+					selectedIs : "home"
+				} 
+			)
+		}}
+
+		<header id="gtco-header" class="gtco-cover" role="banner">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-left">
+						<div class="display-t">
+							<div class="display-tc"> 
+								<div class="row">
+									<div class="col-md-5 text-center header-img animate-box">
+										<img src="images/cube_.png" alt="-">
+									</div>
+									<div class="col-md-7 copy animate-box">
+										<h1>Mayax WhatsApp.</h1>
+										<p>Powered by <a href="http://www.doitcloudconsulting.mx" target="_blank" style="color: #fff"><b>DoIT Cloud Consulting</b></a></p>
+										<p><a href="http://www.doitcloudconsulting.mx" target="_blank" class="btn btn-white">Visit Us</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- END #gtco-header -->
+
+		<div class="gtco-client">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-2 col-md-offset-1 text-center client col-sm-6 col-xs-6 col-xs-offset-0 col-sm-offset-0">
+						<a href="https://www.heroku.com/" target="_blank"><img src="images/heroku.png" class="img-responsive"></a>
+					</div>
+					<div class="col-md-2 text-center client col-sm-6 col-xs-6 col-xs-offset-0 col-sm-offset-0">
+						<a href="https://laravel.com/" target="_blank"><img src="images/laravel.png" alt="-" class="img-responsive"></a>
+					</div>
+					<div class="col-md-2 text-center client col-sm-6 col-xs-6 col-xs-offset-0 col-sm-offset-0">
+						<a href="https://developer.salesforce.com/lightning" target="_blank"><img src="images/lightning.png" alt="-" class="img-responsive"></a>
+					</div>
+					<div class="col-md-2 text-center client col-sm-6 col-xs-6 col-xs-offset-0 col-sm-offset-0">
+						<a href="https://nodejs.org/" target="_blank"><img src="images/node_js.png" alt="-" class="img-responsive"></a>
+					</div>
+					<div class="col-md-2 text-center client col-sm-6 col-xs-6 col-xs-offset-0 col-sm-offset-0">
+						<a href="https://www.heroku.com/postgres" target="_blank"><img src="images/postgresql.png" alt="-" class="img-responsive"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END .gtco-client -->
+
+		<div class="gtco-services gtco-section">
+			<div class="gtco-container">
+				<div class="summarize" id="pricing_summary">
+					<div class="service">
+						<button type="button" class="close" data-dismiss="modal" id="summary_close">
+							<span style="float: right;">&times;</span>
+						</button>
+						<h3> <i class="ti-package"></i> Summary </h3> 
+						<ul>
+							<li>
+								Mayax <b><p id="package_name"></p></b>
+							</li>
+							<li>
+								Smart Actions: <b><p id="package_actions"></p></b>
+							</li>
+							<li>
+								Storage: <b><p id="package_storage"></p></b>
+							</li>
+							<li>
+								Additional storage package: <b><p id="package_additional"></p></b>
+							</li>
+						</ul>
+						 <div align="left">
+							<button class="btn btn-special">Confirm order </button>
+						</div>
+					</div>
+				</div>
+				<div class="row row-pb-md text-center" id="pricing_plan">
+					<h2>Choose your plan</h2>
+					<ul style="list-style-type: none;">
+						<li class="columns active" id="basic_plan">
+							  <ul class="price">
+							    <li class="header-pricing">Mayax Basic</li>
+							    <li>Salesforce Conexion: <b>Yes</b></li>
+							    <li>Smart Actions: <b>3</b></li>
+							    <li>Storage: <b>200MB</b></b></li>
+							    <li>Exporter: <b>Yes</b></li>
+							    <li>Storage Change: <b>Yes</b></li>
+							    <li>Console: <b>Yes</b></li>
+							    <li class="grey"><div class="btn btn_mayax">Basic</div></li>
+							  </ul>
+						</li>
+						<li class="columns" id="pro_plan">
+							  <ul class="price">
+							    <li class="header-pricing">Mayax Pro</li>
+							    <li>Salesforce Conexion: <b>Yes</b></li>
+							    <li>Smart Actions: <b>5</b></li>
+							    <li>Storage: <b>300MB</b></b></li>
+							    <li>Exporter: <b>Yes</b></li>
+							    <li>Storage Change: <b>Yes</b></li>
+							    <li>Console: <b>Yes</b></li>
+							    <li class="grey"><div class="btn btn_mayax">Pro</div></li>
+							  </ul>
+						</li>
+						<li class="columns" id="premium_plan">
+							  <ul class="price">
+							    <li class="header-pricing">Mayax Premium</li>
+							     <li>Salesforce Conexion: <b>Yes</b></li>
+							    <li>Smart Actions: <b>7</b></li>
+							    <li>Storage: <b>400MB</b></b></li>
+							    <li>Exporter: <b>Yes</b></li>
+							    <li>Storage Change: <b>Yes</b></li>
+							    <li>Console: <b>Yes</b></li>
+							    <li class="grey"><div class="btn btn_mayax">Premium</div></li>
+							  </ul>
+						</li>
+					</ul>
+
+					<div class="clearfix visible-md-block visible-sm-block"></div>
+				</div>
+
+				<div class="row row-pb-md text-center" id="pricing_storage">
+					<h2>Choose your storage</h2>
+					<ul style="list-style-type: none;">
+						<li class="columns active" id="pro_storage">
+							  <ul class="price-s">
+							    <li class="header-pricing">Pro</li>
+							    <li><b>1</b> Additional GB</li>
+							    <li class="grey"><div class="btn btn_mayax"> + 1 GB</div></li>
+							  </ul>
+						</li>
+						<li class="columns" id="premium_storage">
+							  <ul class="price-s">
+							    <li class="header-pricing">Premum</li>
+							    <li><b>2</b> Additional GB</li>
+							    <li class="grey"><div class="btn btn_mayax"> + 2 GB</div></li>
+							  </ul>
+						</li>
+					</ul>
+
+					<div class="clearfix visible-md-block visible-sm-block"></div>
+				</div>
+			</div>
+		</div>
+		<!-- END .gtco-services -->
+
+		<div class="gtco-section gtco-products">
+			<div class="gtco-container">
+				<div class="row row-pb-sm">
+					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
+						<h2>Our Clients</h2>
+						<p>Our clients are our priority in all moment. We want offer more than a service.</p>
+					</div>
+				</div>
+				<div class="row row-pb-md">
+					<div class="col-md-4 col-sm-4">
+						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(images/abilia.jpg)">
+							<div class="overlay">
+								<i class="ti-arrow-top-right"></i>
+								<div class="copy">
+									<h3>ABILIA</h3>
+									<p>Abilia is one of the largest real estate developers in mexico with 26 years of experience int the cosntruction sector of large scale projects in the residential, corporate, commercial and mixed use segments.</p>
+								</div>
+							</div>
+							<img src="images/img_1.jpg" class="hidden" alt="-">
+						</a>
+						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(images/sophia.jpg)">
+							<div class="overlay">
+								<i class="ti-arrow-top-right"></i>
+								<div class="copy">
+									<h3>LABORATORIOS SOPHIA</h3>
+									<p>Laboratorios Sophia founded in 1946 is a world class company, leader in the field of Ophthalmology in Mexico whit precence in 16 markets worldwide.</p>
+								</div>
+							</div>
+							<img src="images/img_2.jpg" class="hidden" alt="-">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<a href="#" class="gtco-item one-row bg-img animate-box" style="background-image: url(images/axalta.jpg)">
+							<div class="overlay">
+								<i class="ti-arrow-top-right"></i>
+								<div class="copy">
+									<h3>AXALTA</h3>
+									<p>Axalta Coating Systems is the leading global company dedicated exclusively to the development, manufacture and sale of liquid and power coatings.</p>
+								</div>
+							</div>
+							<img src="images/img_md_1.jpg" class="hidden" alt="-">
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(images/hg.jpg)">
+							<div class="overlay">
+								<i class="ti-arrow-top-right"></i>
+								<div class="copy">
+									<h3>HG CHEMICAL</h3>
+									<p>HG Chemical Group is a 100% Mexican company, established to the west of Mexico City dedicated to the commercialization of chemical. </p>
+								</div>
+							</div>
+							<img src="images/img_3.jpg" class="hidden" alt="-">
+						</a>
+						<a href="#" class="gtco-item two-row bg-img animate-box" style="background-image: url(images/warden.jpg)">
+							<div class="overlay">
+								<i class="ti-arrow-top-right"></i>
+								<div class="copy">
+									<h3>DATA WARDEN</h3>
+									<p>Data Warden es un proveedor Especializado de Servicios de TI, que ofrece Soluciones Personalizadas para empresas con procesos comerciales críticos que requieren soluciones de alto rendimiento y un nivel máximo de seguridad.</p>
+								</div>
+							</div>
+							<img src="images/img_4.jpg" class="hidden" alt="-">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END .gtco-products -->
+
+		<div class="gtco-section gtco-testimonial gtco-gray">
+			<div class="gtco-container">
+
+				<div class="row row-pb-sm">
+					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
+						<h2>Clients About Us</h2>
+						<p>Something our customers say about us.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6 animate-box">
+						<div class="gtco-testimony gtco-left">
+							<div><img src="images/person_1.jpg" alt="-"></div>
+							<blockquote>
+								<p>&ldquo;Domain of the Platform, involvement and focus in the Business Process, are the key to Service Quality that have always received from you.&rdquo; <cite class="author">&mdash; Raúl Hernández</cite></p>
+							</blockquote>	
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6 animate-box">
+						<div class="gtco-testimony gtco-left">
+							<div><img src="images/person_2.jpg" alt="-"></div>
+							<blockquote>
+								<p>&ldquo;We have worked with the DoIT Cloud Consulting team and it has been an excelent experience. Committed, professionals, with knowledge and experience to offer solutions and continuos improvement in each stage of the project.&rdquo; <cite class="author">&mdash; Julian Lizarde Ornelas</cite></p>
+							</blockquote>	
+						</div>
+					</div>
+
+					
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 animate-box">
+						<div class="gtco-testimony gtco-left">
+							<div><img src="images/person_3.jpg" alt="-"></div>
+							<blockquote>
+								<p>&ldquo;Excellent service. The requirements were delivered on time. Extensive knowledge of the Salesforce tool.&rdquo; <cite class="author">&mdash; Mario Quevedo Diaz</cite></p>
+							</blockquote>	
+						</div>
+					</div>
+
+					<div class="col-md-6 col-sm-6 animate-box">
+						<div class="gtco-testimony gtco-left">
+							<div><img src="images/person_1.jpg" alt="-"></div>
+							<blockquote>
+								<p>&ldquo;Excellent service! Always with a quick, concreteand efficient response.&rdquo; <cite class="author">&mdash; Sandra Ivonne Vargas Tufiño</cite></p>
+							</blockquote>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		{{
+			include(
+				"footer.isa",{
+					dominio : dom 
+				}
+			)
+		}}
+
+		<script>
+			$(document).ready(function(){
+
+				$('#pricing_summary').css('display', 'none');		// Inicialmente el banner de cotización no se muestra
+
+				var mbMayax = 0;
+
+			    $('#pricing_plan li').click(function() {
+			        $(this).siblings('li').removeClass('active');
+			        $(this).addClass('active');
+			        
+			        var child    = $(this).children();
+			        var elements = $('.price');
+
+			        
+			        elements.removeAttr('style');
+			        elements.css({"background-color": "#fff"});
+
+			        child.css({"background-color": "#17B794", "color": "#000"});
+			        
+
+			        var plan = $(this).attr("id");
+
+			        switch(plan) {
+
+			        	case 'basic_plan':
+
+			        		mbMayax = 200;
+
+			        		$('#package_name').html('basic');
+			        		$('#package_actions').html('3');
+			        		$('#package_storage').html(mbMayax+' MB');
+
+			        		if ($('#package_additional').html() == '') {
+			        			$('#package_additional').html('No');
+			        		}
+			        		
+
+			        	break;
+
+			        	case 'pro_plan':
+
+			        		mbMayax = 300;
+
+			        		$('#package_name').html('pro');
+			        		$('#package_actions').html('5');
+			        		$('#package_storage').html(mbMayax+' MB');
+
+			        		if ($('#package_additional').html() == '') {
+			        			$('#package_additional').html('No');
+			        		}
+
+			        	break;
+
+			        	case 'premium_plan':
+
+			        		mbMayax = 400;
+
+			        		$('#package_name').html('premium');
+			        		$('#package_actions').html('7');
+			        		$('#package_storage').html(mbMayax+' MB');
+
+			        		if ($('#package_additional').html() == '') {
+			        			$('#package_additional').html('No');
+			        		}
+
+			        	break;	
+
+			        }
+
+			        $('#pricing_summary').css('display', 'block');
+			    });
+
+			    $('#pricing_storage li').click(function() {
+			        $(this).siblings('li').removeClass('active');
+			        $(this).addClass('active');
+			        
+			        var child    = $(this).children();
+			        var elements = $('.price-s');
+
+			        
+			        elements.removeAttr('style');
+			        elements.css({"background-color": "#fff"});
+
+			        child.css({"background-color": "#17B794", "color": "#000"});
+			        
+
+			        var storage = $(this).attr("id");
+
+			       	switch(storage) {
+
+			        	case 'pro_storage':
+
+			        		gbMayax = mbMayax + 1000;
+							
+							$('#package_storage').html(gbMayax+' MB');
+			        		$('#package_additional').html('Yes');
+			        		
+			        	break;
+
+			        	case 'premium_storage':
+
+			        		gbMayax = mbMayax + 2000;
+
+			        		$('#package_storage').html(gbMayax+' MB');
+			        		$('#package_additional').html('Yes');
+			        		
+			        	break;
+			        }
+
+			        $('#pricing_summary').css('display', 'block');
+
+			    });
+
+			    $('button#summary_close').click(function(){
+			    	 $('#pricing_summary').css('display', 'none');
+			    });
+			});
+		</script>
+	</body>
+</html>

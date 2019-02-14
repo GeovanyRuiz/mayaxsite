@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	{{
+		include(
+			"header.isa",
+			{
+				title: "404 mayax",
+				dominio : dom 
+			}
+		)
+	}}
+
+	<body>
+		
+
+		<div class="gtco-loader"></div>
+	
+		{{
+			include(
+				"errors.isa",{
+					codeError : "404",
+					errorMessage : "The page could not be found",
+					dominio : dom 
+				}
+			)
+		}}
+
+		
+		{{
+			include(
+				"footer.isa",{
+					dominio : dom 
+				}
+			)
+		}}
+	</body>
+</html>

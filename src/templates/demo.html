@@ -1,0 +1,174 @@
+
+<html>
+	{{
+		include(
+			"header.isa",
+			{
+				title: "Mayax",
+				dominio : dom 
+			}
+		)
+	}}
+
+	<style type="text/css">
+		.gtco-heading {
+
+		    margin-bottom: 0em;
+
+		}
+	</style>
+	<body>
+		
+
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+
+		{{
+			include(
+				"menu.isa",{
+					dominio : dom,
+					selectedIs : "demo"
+				} 
+			)
+		}}
+
+		{% if isMobile %}
+
+			<header id="gtco-header" class="gtco-cover" role="banner">
+				<div class="gtco-container">
+					<div class="row">
+						<div class="col-md-12 col-md-offset-0 text-left">
+							<div class="display-t">
+								<div class="display-tc">
+									<div class="row">
+										<div class="col-md-5 text-center header-img animate-box">
+											<img src="{{dom}}images/iconos_maya_pipa-01.png" width="66%" alt="-">
+										</div>
+										<div class="col-md-7 copy animate-box">
+											<h1>Native App</h1>
+											<p>Ligthning <a href="http://www.doitcloudconsulting.mx" target="_blank" style="color: #fff"><b>Salesforce</b></a></p>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+
+		{% else %}
+
+			<header id="gtco-header" class="gtco-cover gtco-cover-xs gtco-inner" role="banner">
+				<div class="gtco-container">
+					<div class="row">
+						<div class="col-md-12 col-md-offset-0 text-left">
+							<div class="display-t">
+								<div class="display-tc">
+									<div class="row">
+										<div class="col-md-6 animate-box">
+											<div class="col-md-6 text-center header-img animate-box">
+												<img src="{{dom}}images/sfw.jpg" alt="Salesforce" style="box-shadow: 16px 10px 5px #193919;" width="300%">
+											</div>
+										</div>
+										<div class="col-md-4 copy animate-box" style="padding-left: 220px;">
+											<h3 style="color: white;width: 200px;">Native App </h3>
+											<h1><b>Salesforce</b> </h1>
+											<br/>
+											<img src="{{dom}}images/iconos_maya_pipa-01.png" width="140%">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		
+		{% endif %}
+		
+		<!-- first screenshots-->		
+		<div class="gtco-section">
+			<div class="gtco-container" align="center">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
+						<h2>Would you like see it yourself? </h2>
+						<p>Your customer will not feel a service, they will feel a friend</p>
+					</div>
+				
+				<div class="row">
+					<div class="btn-group" data-toggle="buttons">
+					  	<label class="btn btn-primary active">
+					    	<input type="radio" name="options" id="Salesforce" onchange="showImages(this);" autocomplete="off" checked> Salesforce
+					  	</label>
+					  	<label class="btn btn-primary">
+					    	<input type="radio" name="options" id="Customer" onchange="showImages(this);" autocomplete="off"> Customer
+					  	</label>
+					</div> 
+					<br/><br/>
+					<div class="row">
+						{% if isMobile %}
+							<div id="sfdcChat">
+								<img src="{{dom}}images/f1.jpg" style="box-shadow: 16px 10px 5px #193919;" width="70%" >
+							</div>
+							<div id="whatsChat" style="display: none;">
+								<b style="color: black;">WhatsApp Application</b><br/>
+								<img src="{{dom}}images/f4_opt.jpg" style="box-shadow: 16px 10px 5px #193919;" width="70%" >
+							</div>
+						{% else %}
+
+							<div id="sfdcChat">
+								<img src="{{dom}}images/f1.jpg" style="box-shadow: 16px 10px 5px #193919;">
+							</div>
+							<div id="whatsChat" style="display: none;">
+								<b style="color: black;">WhatsApp Application</b><br/>
+								<img src="{{dom}}images/f4_opt.jpg" style="box-shadow: 16px 10px 5px #193919;">
+							</div>
+
+						{% endif %}
+
+						
+					</div>						
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+			function byid(id) {
+				return document.getElementById(id);
+			}
+
+			function showImages(element) {
+				if(element.id == "Salesforce"){
+					byid("sfdcChat").style.display = "block";
+					byid("whatsChat").style.display = "none";
+				}else{
+					byid("sfdcChat").style.display = "none";
+					byid("whatsChat").style.display = "block";
+				}
+			}
+		</script>
+		<!-- first screenshots-->
+		
+		<div class="gtco-client">
+			<div class="gtco-container">
+				
+			</div>
+		</div>
+
+
+	{{
+		include(
+			"footer.isa",{
+				dominio : dom 
+			}
+		)
+	}}
+
+	</body>
+</html>
+
